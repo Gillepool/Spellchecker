@@ -1,0 +1,6 @@
+*.pyc
+*~
+__pychache__
+myvenv
+file.txt
+.DS_Store
