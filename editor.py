@@ -13,8 +13,9 @@ def words(text): return re.findall(r'\w+', text.lower())
 
 WORDS = Counter(words(open('big.txt').read()))
 
-def P(word, N=sum(WORDS.values())): 
-    "Probability of `word`."
+def Probability(word): 
+	"Probability of a word"
+    N = sum(WORD.values())
     return WORDS[word] / N
 
 def correction(word): 
